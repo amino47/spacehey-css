@@ -1,0 +1,335 @@
+<style>
+
+@import url("https://robins.one/spacehey/addons/modern-comments.css");
+
+<!-- (c) Layout created by p0libius (https://layouts.spacehey.com/layout?id=1430) -->
+<!-- modified by amino-->
+body {
+font-family: Anonymous Pro, monospace;
+background-color: black;
+}
+
+main:before {
+	width: 100%;
+	height: 150px;
+	display: block;
+	content: '';
+	background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExODdyZDF5MW1zdjdmbjluOWlxcXF6amR0am04aDVtbzBwMjVubjlkMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4heseFMvObk9q/giphy.gif);
+	background-position: center center;
+	background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+	main:before{
+		height: 200px;
+	}
+}
+
+
+.logo {
+filter: sepia(100%) hue-rotate(45deg) saturate(10);
+}
+#q, button {
+color: #00ff00;
+background-color: black;
+border: 1px solid #00ff00;
+font-family: inherit;
+}
+p, i, b, .count {
+color: #00ff00 !important;
+}
+a, .profile .friends .person p, .logout-btn {
+color: #00ff00 !important;
+text-decoration: underline !important;
+}
+.container {
+margin: 0 auto 0;
+}
+.icon {
+display: none;
+}
+nav, nav .links a {
+color: #00ff00;
+}
+nav .top {
+margin-top: 2px;
+background: none;
+background-color: black;
+border: 2px dotted #00ff00;
+border-bottom: none;
+}
+nav .links {
+background-color: black;
+border: 2px solid #00ff00;
+}
+main {
+background: black;
+color: #00ff00;
+border-left: 2px dotted #00ff00;
+border-right: 2px dotted #00ff00;
+}
+.heading, .url-info {
+color: #00ff00 !important;
+background: none;
+background-color: black !important;
+border: 2px solid #00ff00 !important;
+}
+.inner {
+color: #00ff00 !important;
+border: 2px dotted #00ff00;
+border-top: none;
+}
+.profile-info {
+border: 2px solid #00ff00;
+}
+.profile-info .inner {
+border: none;
+}
+.friends .inner {
+border-bottom: none;
+}
+#comments {
+border-bottom: 2px dotted #00ff00;
+}
+.profile .contact, .profile .table-section, .home-actions {
+border: none !important;
+}
+.profile .contact .f-row:first-of-type {
+margin-top: 0px;
+padding-top: 7px;
+}
+.profile .blurbs .section h4 {
+color: #00ff00 !important;
+}
+.details-table {
+margin: 2px;
+}
+.details-table, td {
+border: 1px solid #00ff00;
+border-collapse: collapse;
+}
+td {
+color: #00ff00 !important;
+background: none;
+background-color: black !important;
+} 
+table.details-table {
+max-width: 98%;
+}
+.profile h1 {
+font-size: 2em;
+}
+footer {
+background: black;
+border: 2px dotted #00ff00;
+}
+footer p {
+color #00ff00 !important;
+}
+.comments-table {
+border: none;
+border-collapse: collapse;
+}
+.comment-replies {
+border: 1px solid #00ff00;
+margin: 2px;
+}
+nav .info {
+background: none;
+}
+
+body {
+  background: black;
+}
+
+html:before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://i.ibb.co/d2Np1d2/static.gif);
+  background-size: 200px !important;
+  content: '';
+  height: 300%;
+  left: -50%;
+  opacity: .2; /*Change this value (0 - 1) to change the intensity of the effect)*/
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  pointer-events:none;
+}
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+.profile-pic {
+border-radius: 500px;
+overflow: hidden;
+}
+
+.profile .friends .person img {
+
+border-radius: 500px;
+
+}
+
+@import url("https://robins.one/spacehey/addons/online-glow.css");
+.online,.online:before {
+    --onl_baseColor: #00ff00; /* Main color for glow */
+    --onl_darkColor: green; /* Dark color for glow */
+    --onl_brightColor: darkgreen; /* Color for shadow of the glow */
+    --onl_leftOffset: 0px; /* Adjust this to move it left/right */
+    --onl_topOffset: 0px; /* Adjust this to move it up/down */
+}
+.col.w-20.left .edit-info {
+ background-color: black;
+  border-color: #00ff00;
+}
+
+.group-actions a {
+	background-color: black;
+  	color: #00ff00;
+}
+
+:root {
+  --glowInner: transparent;
+  --glowColor: #00ff004c;
+}
+.profile h1 {
+  text-shadow: 0 0 15px var(--glowInner), 0 0 20px var(--glowInner),
+    0 0 30px var(--glowColor), 0 0 40px var(--glowColor),
+    0 0 50px var(--glowColor), 0 0 60px var(--glowColor),
+    0 0 70px var(--glowColor);
+  color: inherit;
+  display: inline;
+  animation: flicker1 5s infinite;
+}
+.neon {
+  text-shadow: 0 0 15px var(--glowInner), 0 0 20px var(--glowInner),
+    0 0 30px var(--glowColor), 0 0 40px var(--glowColor),
+    0 0 50px var(--glowColor), 0 0 60px var(--glowColor),
+    0 0 70px var(--glowColor);
+}
+.flicker1 {
+  color: inherit;
+  display: inline;
+  animation: flicker1 5s infinite;
+}
+
+
+
+.flicker2 {
+  color: inherit;
+  display: inline;
+  animation: flicker2 3s infinite;
+}
+.flicker3 {
+  color: inherit;
+  display: inline;
+  animation: flicker1 2s infinite;
+}
+@keyframes flicker1 {
+  0% {
+    opacity: 1;
+  }
+  9% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  12% {
+    opacity: 0.7;
+  }
+  13% {
+    opacity: 0.9;
+  }
+  18% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0.6;
+  }
+  24% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  26% {
+    opacity: 1;
+  }
+  58% {
+  	opacity: 0.56;
+  }
+  60% {
+    opacity: 0;
+  }
+  62% {
+   opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flicker2 {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0.3;
+  }
+  18% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 0.9;
+  }
+  24% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  51% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+  78% {
+    opacity: 0.1;
+  }
+  79% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+
+<iframe width='0' height='0' src='https://www.youtube.com/embed/nJt9X2iJh_Y?si=V5PKq-TPG1c-kxHI//?&;amp;;autoplay=1&;loop=1&;controls=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='' loading='lazy'></iframe>
